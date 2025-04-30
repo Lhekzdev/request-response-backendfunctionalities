@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <!-- Assignment Instructions
+    Assigned
+
+    Instructions:
+
+    You are going to build simple APIs using Node.js and Express.
+
+    Use the drugs array given below as your "database" inside the server.
+
+    Important:
+    Use express.json() to handle incoming POST request bodies.
+    Test all your APIs using Postman.
+
+
+    The Drugs Array
+
+ -->
+<ol>
+<li>    GET /drugs/antibiotics
+    Return all drugs where category is "Antibiotic".
+</li>
+<li>    GET /drugs/names
+    Return an array of all drug names converted to lowercase.
+</li>
+<li>  POST /drugs/by-category
+    Accept a category in the body and return all drugs under that category.
+    Example body: { "category": "Antibiotic" }</li>
+<li>
+    GET /drugs/names-manufacturers
+    Return an array of objects showing each drug’s name and manufacturer.
+</li>
+<li>
+    GET /drugs/prescription
+    Return all drugs where isPrescriptionOnly is true.
+
+</li>
+<li>     GET /drugs/formatted
+    Return a new array where each item is a string like:
+    "Drug: [name] - [dosageMg]mg"
+</li>
+<li>
+    GET /drugs/low-stock
+    Return all drugs where stock is less than 50.
+</li>
+<li>    GET /drugs/non-prescription
+    Return all drugs where isPrescriptionOnly is false.
+</li>
+<li>   POST /drugs/manufacturer-count
+    Accept a manufacturer in the body and return how many drugs are produced by that manufacturer.
+    Example body: { "manufacturer": "Pfizer" }</li>
+<li>     GET /drugs/count-analgesics
+    Count and return how many drugs have the category "Analgesic".</li>
+</ol>
+
+
+    <script src="./index.js"></script>
+</body>
+
+
+</html>
